@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+
+<body>
+
+
+    <div class="container2">
+        <h1>Feedback</h1>
+        <div id="form" name="form" class="groupS" onsubmit="validate">
+            <input type="text" class="inputS" id="name" placeholder="Type your name" required>
+            <label for="name" class="labelS"> Name :</label>
+        </div>
+        <div id="form" name="form" class="groupS" onsubmit="validate">
+            <input type="email" class="inputS" id="email" placeholder="Type your email" required>
+            <label for="email" class="labelS"> E-mail :</label>
+        </div>
+        <p class="textLab">Your message :</p>
+        <textarea id="form" class="textbox" rows="5" required></textarea>
+
+        <button id="back"><a href="#" class="body-a">Go back to home page.</a></button>
+
+        <input type="submit" id="submit-btn" onsubmit="return validate()" class="submit" value="SEND"
+            onclick="window.location.reload();">
+
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+
+</html>
